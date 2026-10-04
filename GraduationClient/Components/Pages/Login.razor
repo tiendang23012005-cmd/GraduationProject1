@@ -1,0 +1,121 @@
+﻿@page "/login"
+
+@using GraduationClient.Models
+@using GraduationClient.Services
+
+@inject ApiService Api
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+<PageTitle>Đăng nhập</PageTitle>
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h3 class="text-center mb-4">
+                        Đăng nhập hệ thống
+                    </h3>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email
+                        </label>
+
+                        <input class="form-control"
+                               type="email"
+                               @bind="email"
+                               placeholder="Nhập email" />
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Mật khẩu
+                        </label>
+
+                        <input class="form-control"
+                               type="password"
+                               @bind="matKhau"
+                               placeholder="Nhập mật khẩu" />
+
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(message))
+                    {
+                        <div class="alert alert-danger">
+                            @message
+                        </div>
+                    }
+
+                    <button class="btn btn-primary w-100"
+                            @onclick="DoLogin">
+
+                        Đăng nhập
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+
+    private string email = "";
+
+    private string matKhau = "";
+
+    private string message = "";
+
+    private async Task DoLogin()
+    {
+        message = "";
+
+        if (string.IsNullOrWhiteSpace(email) ||
+            string.IsNullOrWhiteSpace(matKhau))
+        {
+            message = "Vui lòng nhập đầy đủ email và mật khẩu.";
+            return;
+        }
+
+        try
+        {
+            var result = await Api.Login(
+                email,
+                matKhau);
+
+            if (result == null)
+            {
+                message = "Sai email hoặc mật khẩu.";
+                return;
+            }
+
+            Auth.Login(
+                result.Token,
+                result.MaSV,
+                result.HoTen,
+                result.Email,
+                result.Quyen);
+
+            Navigation.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            message = "Không thể đăng nhập: " + ex.Message;
+        }
+    }
+}

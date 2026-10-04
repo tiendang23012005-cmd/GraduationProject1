@@ -1,0 +1,213 @@
+﻿@page "/grades"
+
+@using GraduationClient.Services
+@using ModelDangKy = GraduationClient.Models.DangKy
+
+@inject ApiService Api
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+<PageTitle>Quản lý điểm</PageTitle>
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">Quản lý điểm</h3>
+
+    @if (!Auth.IsLoggedIn)
+    {
+        <div class="alert alert-warning">
+            Bạn cần đăng nhập để xem điểm.
+        </div>
+
+        <button class="btn btn-primary"
+                @onclick="GoLogin">
+            Đăng nhập
+        </button>
+    }
+    else
+    {
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert alert-info">
+                @message
+            </div>
+        }
+
+        <div class="card">
+
+            <div class="card-header">
+                Danh sách điểm
+            </div>
+
+            <div class="card-body">
+
+                @if (registrations.Count == 0)
+                {
+                    <p>Chưa có dữ liệu điểm.</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered table-hover">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Mã ĐK</th>
+
+                                    <th>Mã SV</th>
+
+                                    <th>Mã ĐT</th>
+
+                                    <th>Điểm</th>
+
+                                    @if (Auth.Quyen == "Admin")
+                                    {
+                                        <th>Thao tác</th>
+                                    }
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var dk in registrations)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @dk.MaDK
+                                        </td>
+
+                                        <td>
+                                            @dk.MaSV
+                                        </td>
+
+                                        <td>
+                                            @dk.MaDT
+                                        </td>
+
+                                        <td>
+
+                                            @if (Auth.Quyen == "Admin")
+                                            {
+                                                <input class="form-control"
+                                                       style="width:120px"
+                                                       type="number"
+                                                       min="0"
+                                                       max="10"
+                                                       step="0.1"
+                                                       @bind="dk.Diem" />
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-success">
+                                                    @dk.Diem
+                                                </span>
+                                            }
+
+                                        </td>
+
+                                        @if (Auth.Quyen == "Admin")
+                                        {
+                                            <td>
+
+                                                <button class="btn btn-success btn-sm"
+                                                        @onclick="() => SaveGrade(dk)">
+
+                                                    Lưu điểm
+
+                                                </button>
+
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+
+@code {
+
+    private List<ModelDangKy> registrations = new();
+
+    private string message = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Auth.IsLoggedIn)
+        {
+            await Load();
+        }
+    }
+
+
+    private async Task Load()
+    {
+        try
+        {
+            registrations = await Api.GetDangKys();
+
+            if (Auth.Quyen == "Student")
+            {
+                registrations = registrations
+                    .Where(x => x.MaSV == Auth.MaSV)
+                    .ToList();
+            }
+        }
+        catch (Exception ex)
+        {
+            message =
+                "Không thể tải điểm: "
+                + ex.Message;
+        }
+    }
+
+
+    private async Task SaveGrade(ModelDangKy dk)
+    {
+        if (dk.Diem < 0 ||
+            dk.Diem > 10)
+        {
+            message = "Điểm phải từ 0 đến 10.";
+            return;
+        }
+
+        var result =
+            await Api.UpdateDiemDangKy(
+                dk.MaDK,
+                dk.Diem);
+
+        message = result
+            ? "Lưu điểm thành công."
+            : "Lưu điểm thất bại.";
+
+        if (result)
+        {
+            await Load();
+        }
+    }
+
+
+    private void GoLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

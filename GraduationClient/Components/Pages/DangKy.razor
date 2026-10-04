@@ -1,0 +1,268 @@
+﻿@page "/dangky"
+
+@using GraduationClient.Services
+@using ModelDangKy = GraduationClient.Models.DangKy
+
+@inject ApiService Api
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+<PageTitle>Đăng ký đề tài</PageTitle>
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">Đăng ký đề tài</h3>
+
+    @if (!Auth.IsLoggedIn)
+    {
+        <div class="alert alert-warning">
+            Bạn cần đăng nhập để đăng ký đề tài.
+        </div>
+
+        <button class="btn btn-primary"
+                @onclick="GoLogin">
+            Đăng nhập
+        </button>
+    }
+    else
+    {
+        <div class="card mb-4">
+
+            <div class="card-header">
+                Đăng ký đề tài
+            </div>
+
+            <div class="card-body">
+
+                <div class="row">
+
+                    <div class="col-md-3 mb-3">
+
+                        <label class="form-label">
+                            Mã sinh viên
+                        </label>
+
+                        @if (Auth.Quyen == "Student")
+                        {
+                            <input class="form-control"
+                                   value="@Auth.MaSV"
+                                   disabled />
+                        }
+                        else
+                        {
+                            <input class="form-control"
+                                   type="number"
+                                   @bind="registration.MaSV" />
+                        }
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label class="form-label">
+                            Mã đề tài
+                        </label>
+
+                        <input class="form-control"
+                               type="number"
+                               @bind="registration.MaDT" />
+
+                    </div>
+
+                </div>
+
+                @if (!string.IsNullOrEmpty(message))
+                {
+                    <div class="alert alert-info">
+                        @message
+                    </div>
+                }
+
+                <button class="btn btn-primary"
+                        @onclick="Register">
+
+                    Đăng ký đề tài
+
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-header">
+                Danh sách đăng ký
+            </div>
+
+            <div class="card-body">
+
+                @if (registrations.Count == 0)
+                {
+                    <p>Chưa có đăng ký.</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered table-hover">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Mã ĐK</th>
+                                    <th>Mã SV</th>
+                                    <th>Mã ĐT</th>
+                                    <th>Ngày đăng ký</th>
+                                    <th>Điểm</th>
+
+                                    @if (Auth.Quyen == "Admin")
+                                    {
+                                        <th>Thao tác</th>
+                                    }
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var dk in registrations)
+                                {
+                                    <tr>
+
+                                        <td>@dk.MaDK</td>
+
+                                        <td>@dk.MaSV</td>
+
+                                        <td>@dk.MaDT</td>
+
+                                        <td>
+                                            @dk.NgayDangKy.ToString(
+                                                     "dd/MM/yyyy HH:mm")
+                                        </td>
+
+                                        <td>@dk.Diem</td>
+
+                                        @if (Auth.Quyen == "Admin")
+                                        {
+                                            <td>
+
+                                                <button class="btn btn-danger btn-sm"
+                                                        @onclick="() => Delete(dk.MaDK)">
+
+                                                    Xóa
+
+                                                </button>
+
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+
+</div>
+
+
+@code {
+
+    private List<ModelDangKy> registrations = new();
+
+    private ModelDangKy registration = new();
+
+    private string message = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Auth.IsLoggedIn)
+        {
+            await Load();
+        }
+    }
+
+
+    private async Task Load()
+    {
+        try
+        {
+            registrations = await Api.GetDangKys();
+        }
+        catch (Exception ex)
+        {
+            message =
+                "Không thể tải danh sách đăng ký: "
+                + ex.Message;
+        }
+    }
+
+
+    private async Task Register()
+    {
+        message = "";
+
+        if (Auth.Quyen == "Student")
+        {
+            registration.MaSV = Auth.MaSV;
+        }
+
+        if (registration.MaSV <= 0)
+        {
+            message = "Mã sinh viên không hợp lệ.";
+            return;
+        }
+
+        if (registration.MaDT <= 0)
+        {
+            message = "Mã đề tài không hợp lệ.";
+            return;
+        }
+
+        var result =
+            await Api.AddDangKy(registration);
+
+        if (result)
+        {
+            message =
+                "Đăng ký đề tài thành công.";
+
+            registration = new ModelDangKy();
+
+            await Load();
+        }
+        else
+        {
+            message =
+                "Đăng ký thất bại.";
+        }
+    }
+
+
+    private async Task Delete(int id)
+    {
+        var result =
+            await Api.DeleteDangKy(id);
+
+        message = result
+            ? "Xóa đăng ký thành công."
+            : "Xóa đăng ký thất bại.";
+
+        await Load();
+    }
+
+
+    private void GoLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

@@ -1,0 +1,309 @@
+﻿@page "/detai"
+
+@using GraduationClient.Services
+@using ModelDeTai = GraduationClient.Models.DeTai
+
+@inject ApiService Api
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+<PageTitle>Quản lý đề tài</PageTitle>
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">Quản lý đề tài</h3>
+
+    @if (!Auth.IsLoggedIn)
+    {
+        <div class="alert alert-warning">
+            Bạn cần đăng nhập để sử dụng chức năng này.
+        </div>
+
+        <button class="btn btn-primary"
+                @onclick="GoLogin">
+            Đăng nhập
+        </button>
+    }
+    else
+    {
+        @if (Auth.Quyen == "Admin")
+        {
+            <div class="card mb-4">
+
+                <div class="card-header">
+                    @(editing ? "Sửa đề tài" : "Thêm đề tài")
+                </div>
+
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <div class="col-md-2 mb-3">
+                            <label class="form-label">
+                                Mã đề tài
+                            </label>
+
+                            <input class="form-control"
+                                   type="number"
+                                   @bind="thesis.MaDT"
+                                   disabled="@editing" />
+                        </div>
+
+                        <div class="col-md-5 mb-3">
+                            <label class="form-label">
+                                Tên đề tài
+                            </label>
+
+                            <input class="form-control"
+                                   @bind="thesis.TenDT" />
+                        </div>
+
+                        <div class="col-md-5 mb-3">
+                            <label class="form-label">
+                                Mô tả
+                            </label>
+
+                            <input class="form-control"
+                                   @bind="thesis.MoTa" />
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label">
+                                Điểm
+                            </label>
+
+                            <input class="form-control"
+                                   type="number"
+                                   min="0"
+                                   max="10"
+                                   step="0.1"
+                                   @bind="thesis.Diem" />
+                        </div>
+
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(message))
+                    {
+                        <div class="alert alert-info">
+                            @message
+                        </div>
+                    }
+
+                    <button class="btn btn-primary me-2"
+                            @onclick="Save">
+
+                        @(editing ? "Cập nhật" : "Thêm đề tài")
+
+                    </button>
+
+                    <button class="btn btn-secondary"
+                            @onclick="Clear">
+
+                        Làm mới
+
+                    </button>
+
+                </div>
+            </div>
+        }
+
+
+        <div class="card">
+
+            <div class="card-header">
+                Danh sách đề tài
+            </div>
+
+            <div class="card-body">
+
+                @if (theses.Count == 0)
+                {
+                    <p>Chưa có đề tài.</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered table-hover">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Mã ĐT</th>
+                                    <th>Tên đề tài</th>
+                                    <th>Mô tả</th>
+                                    <th>Điểm</th>
+
+                                    @if (Auth.Quyen == "Admin")
+                                    {
+                                        <th>Thao tác</th>
+                                    }
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var dt in theses)
+                                {
+                                    <tr>
+
+                                        <td>@dt.MaDT</td>
+
+                                        <td>@dt.TenDT</td>
+
+                                        <td>@dt.MoTa</td>
+
+                                        <td>
+                                            <span class="badge bg-success">
+                                                @dt.Diem
+                                            </span>
+                                        </td>
+
+                                        @if (Auth.Quyen == "Admin")
+                                        {
+                                            <td>
+
+                                                <button class="btn btn-warning btn-sm me-2"
+                                                        @onclick="() => Edit(dt)">
+
+                                                    Sửa
+
+                                                </button>
+
+                                                <button class="btn btn-danger btn-sm"
+                                                        @onclick="() => Delete(dt.MaDT)">
+
+                                                    Xóa
+
+                                                </button>
+
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+
+</div>
+
+
+@code {
+
+    private List<ModelDeTai> theses = new();
+
+    private ModelDeTai thesis = new();
+
+    private bool editing = false;
+
+    private string message = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Auth.IsLoggedIn)
+        {
+            await Load();
+        }
+    }
+
+
+    private async Task Load()
+    {
+        try
+        {
+            theses = await Api.GetDeTais();
+        }
+        catch (Exception ex)
+        {
+            message = "Không thể tải đề tài: " + ex.Message;
+        }
+    }
+
+
+    private async Task Save()
+    {
+        message = "";
+
+        if (thesis.Diem < 0 ||
+            thesis.Diem > 10)
+        {
+            message = "Điểm phải từ 0 đến 10.";
+            return;
+        }
+
+        bool result;
+
+        if (editing)
+        {
+            result = await Api.UpdateDeTai(thesis);
+
+            message = result
+                ? "Cập nhật đề tài thành công."
+                : "Cập nhật đề tài thất bại.";
+        }
+        else
+        {
+            result = await Api.AddDeTai(thesis);
+
+            message = result
+                ? "Thêm đề tài thành công."
+                : "Thêm đề tài thất bại.";
+        }
+
+        if (result)
+        {
+            Clear();
+            await Load();
+        }
+    }
+
+
+    private void Edit(ModelDeTai dt)
+    {
+        thesis = new ModelDeTai
+            {
+                MaDT = dt.MaDT,
+                TenDT = dt.TenDT,
+                MoTa = dt.MoTa,
+                Diem = dt.Diem
+            };
+
+        editing = true;
+    }
+
+
+    private async Task Delete(int id)
+    {
+        var result = await Api.DeleteDeTai(id);
+
+        message = result
+            ? "Xóa đề tài thành công."
+            : "Xóa đề tài thất bại.";
+
+        await Load();
+    }
+
+
+    private void Clear()
+    {
+        thesis = new ModelDeTai();
+        editing = false;
+    }
+
+
+    private void GoLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationClient.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GraduationClient.9y32g3luvz.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GraduationClient.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GraduationClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GraduationClient.props",
+      "PackagePath": "build\\GraduationClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GraduationClient.props",
+      "PackagePath": "buildMultiTargeting\\GraduationClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GraduationClient.props",
+      "PackagePath": "buildTransitive\\GraduationClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

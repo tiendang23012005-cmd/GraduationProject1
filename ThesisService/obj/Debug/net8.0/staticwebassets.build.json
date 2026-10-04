@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "kgaVwcbtPNiu0KaegA5SVph+n8hBvRBU9m2DgW2Xhog=",
+  "Source": "ThesisService",
+  "BasePath": "_content/ThesisService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

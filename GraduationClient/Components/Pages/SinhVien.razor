@@ -1,0 +1,339 @@
+﻿@page "/sinhvien"
+
+@using GraduationClient.Services
+@using ModelSinhVien = GraduationClient.Models.SinhVien
+
+@inject ApiService Api
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+<PageTitle>Quản lý sinh viên</PageTitle>
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">Quản lý sinh viên</h3>
+
+    @if (!Auth.IsLoggedIn)
+    {
+        <div class="alert alert-warning">
+            Bạn cần đăng nhập để sử dụng chức năng này.
+        </div>
+
+        <button class="btn btn-primary"
+                @onclick="GoLogin">
+            Đăng nhập
+        </button>
+    }
+    else if (Auth.Quyen != "Admin")
+    {
+        <div class="alert alert-danger">
+            Bạn không có quyền quản lý sinh viên.
+        </div>
+    }
+    else
+    {
+        <!-- FORM -->
+        <div class="card mb-4">
+
+            <div class="card-header">
+                @(editing ? "Sửa sinh viên" : "Thêm sinh viên")
+            </div>
+
+            <div class="card-body">
+
+                <div class="row">
+
+                    <div class="col-md-2 mb-3">
+                        <label class="form-label">Mã sinh viên</label>
+
+                        <input class="form-control"
+                               type="number"
+                               @bind="student.MaSV"
+                               disabled="@editing" />
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label class="form-label">Họ tên</label>
+
+                        <input class="form-control"
+                               @bind="student.HoTen" />
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label class="form-label">Lớp</label>
+
+                        <input class="form-control"
+                               @bind="student.Lop" />
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label class="form-label">Email</label>
+
+                        <input class="form-control"
+                               type="email"
+                               @bind="student.Email" />
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Mật khẩu</label>
+
+                        <input class="form-control"
+                               type="password"
+                               @bind="student.MatKhau" />
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Quyền</label>
+
+                        <select class="form-select"
+                                @bind="student.Quyen">
+
+                            <option value="Student">
+                                Student
+                            </option>
+
+                            <option value="Admin">
+                                Admin
+                            </option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                @if (!string.IsNullOrEmpty(message))
+                {
+                    <div class="alert alert-info">
+                        @message
+                    </div>
+                }
+
+                <button class="btn btn-primary me-2"
+                        @onclick="Save">
+
+                    @(editing ? "Cập nhật" : "Thêm sinh viên")
+
+                </button>
+
+                <button class="btn btn-secondary"
+                        @onclick="Clear">
+
+                    Làm mới
+
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- DANH SÁCH -->
+
+        <div class="card">
+
+            <div class="card-header">
+                Danh sách sinh viên
+            </div>
+
+            <div class="card-body">
+
+                @if (students.Count == 0)
+                {
+                    <p>Chưa có sinh viên.</p>
+                }
+                else
+                {
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered table-hover">
+
+                            <thead>
+                                <tr>
+                                    <th>Mã SV</th>
+                                    <th>Họ tên</th>
+                                    <th>Lớp</th>
+                                    <th>Email</th>
+                                    <th>Quyền</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var sv in students)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @sv.MaSV
+                                        </td>
+
+                                        <td>
+                                            @sv.HoTen
+                                        </td>
+
+                                        <td>
+                                            @sv.Lop
+                                        </td>
+
+                                        <td>
+                                            @sv.Email
+                                        </td>
+
+                                        <td>
+
+                                            <span class="badge @(sv.Quyen == "Admin"
+                                                ? "bg-danger"
+                                                : "bg-primary")">
+
+                                                @sv.Quyen
+
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="btn btn-warning btn-sm me-2"
+                                                    @onclick="() => Edit(sv)">
+
+                                                Sửa
+
+                                            </button>
+
+                                            <button class="btn btn-danger btn-sm"
+                                                    @onclick="() => Delete(sv.MaSV)">
+
+                                                Xóa
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+
+    private List<ModelSinhVien> students = new();
+
+    private ModelSinhVien student = new()
+        {
+            Quyen = "Student"
+        };
+
+    private bool editing = false;
+
+    private string message = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Auth.IsLoggedIn &&
+            Auth.Quyen == "Admin")
+        {
+            await Load();
+        }
+    }
+
+
+    private async Task Load()
+    {
+        try
+        {
+            students = await Api.GetSinhViens();
+        }
+        catch (Exception ex)
+        {
+            message = "Không thể tải danh sách: " + ex.Message;
+        }
+    }
+
+
+    private async Task Save()
+    {
+        message = "";
+
+        bool result;
+
+        if (editing)
+        {
+            result = await Api.UpdateSinhVien(student);
+
+            message = result
+                ? "Cập nhật sinh viên thành công."
+                : "Cập nhật sinh viên thất bại.";
+        }
+        else
+        {
+            result = await Api.AddSinhVien(student);
+
+            message = result
+                ? "Thêm sinh viên thành công."
+                : "Thêm sinh viên thất bại.";
+        }
+
+        if (result)
+        {
+            Clear();
+            await Load();
+        }
+    }
+
+
+    private void Edit(ModelSinhVien sv)
+    {
+        student = new ModelSinhVien
+            {
+                MaSV = sv.MaSV,
+                HoTen = sv.HoTen,
+                Lop = sv.Lop,
+                Email = sv.Email,
+                MatKhau = sv.MatKhau,
+                Quyen = sv.Quyen
+            };
+
+        editing = true;
+    }
+
+
+    private async Task Delete(int id)
+    {
+        var result = await Api.DeleteSinhVien(id);
+
+        message = result
+            ? "Xóa sinh viên thành công."
+            : "Xóa sinh viên thất bại.";
+
+        await Load();
+    }
+
+
+    private void Clear()
+    {
+        student = new ModelSinhVien
+            {
+                Quyen = "Student"
+            };
+
+        editing = false;
+    }
+
+
+    private void GoLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

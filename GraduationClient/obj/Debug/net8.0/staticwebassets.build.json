@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "Hash": "ogjQftdx9NqiVxTs2+q8gtd/2STpMtLf8VYwtoE/+sA=",
+  "Source": "GraduationClient",
+  "BasePath": "_content/GraduationClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GraduationClient\\wwwroot",
+      "Source": "GraduationClient",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\",
+      "BasePath": "_content/GraduationClient",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GraduationClient.styles.css",
+      "SourceId": "GraduationClient",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "GraduationClient#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "9y32g3luvz",
+      "Integrity": "f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GraduationClient.styles.css"
+    },
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationClient.bundle.scp.css",
+      "SourceId": "GraduationClient",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "GraduationClient#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "9y32g3luvz",
+      "Integrity": "f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationClient.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+      "SourceId": "GraduationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tkf00k5pm8",
+      "Integrity": "3a4ar0MTDjNf/olITAcDvEdpBJnvElKkjVeBa4DasZk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "GraduationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "GraduationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\favicon.png",
+      "SourceId": "GraduationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\",
+      "BasePath": "_content/GraduationClient",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6911"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3a4ar0MTDjNf/olITAcDvEdpBJnvElKkjVeBa4DasZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:52:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3a4ar0MTDjNf/olITAcDvEdpBJnvElKkjVeBa4DasZk="
+        }
+      ]
+    },
+    {
+      "Route": "app.tkf00k5pm8.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6911"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3a4ar0MTDjNf/olITAcDvEdpBJnvElKkjVeBa4DasZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:52:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tkf00k5pm8"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3a4ar0MTDjNf/olITAcDvEdpBJnvElKkjVeBa4DasZk="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Oct 2026 16:15:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "GraduationClient.9y32g3luvz.bundle.scp.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationClient.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:54:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9y32g3luvz"
+        },
+        {
+          "Name": "label",
+          "Value": "GraduationClient.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4="
+        }
+      ]
+    },
+    {
+      "Route": "GraduationClient.9y32g3luvz.styles.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GraduationClient.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:54:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9y32g3luvz"
+        },
+        {
+          "Name": "label",
+          "Value": "GraduationClient.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4="
+        }
+      ]
+    },
+    {
+      "Route": "GraduationClient.bundle.scp.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationClient.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:54:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4="
+        }
+      ]
+    },
+    {
+      "Route": "GraduationClient.styles.css",
+      "AssetFile": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GraduationClient.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 Oct 2026 02:54:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f7MhgQ5r0UTjgpvwaXAGrcGOnuKtvq1GMRHz6x+oQs4="
+        }
+      ]
+    }
+  ]
+}

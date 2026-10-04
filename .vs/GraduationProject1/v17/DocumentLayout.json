@@ -1,0 +1,679 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_vscode_tim\\GraduationProject1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\controllers\\dangkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\controllers\\dangkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\grades.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\grades.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\dangky.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\dangky.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\detai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\detai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\sinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\sinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\controllers\\detaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\controllers\\detaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\models\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\models\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\thesisservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\thesisservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|d:\\c_vscode_tim\\graduationproject1\\thesisservice\\models\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BECE40-0E7F-49F2-B326-2D6487164C7C}|ThesisService\\ThesisService.csproj|solutionrelative:thesisservice\\models\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\graduationclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\graduationclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|d:\\c_vscode_tim\\graduationproject1\\graduationclient\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25F7909-F6D4-4863-8188-1E3E46CDAF43}|GraduationClient\\GraduationClient.csproj|solutionrelative:graduationclient\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|d:\\c_vscode_tim\\graduationproject1\\registrationservice\\registrationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1CCCC9E7-17BA-4538-ABE8-CADBADB41860}|RegistrationService\\RegistrationService.csproj|solutionrelative:registrationservice\\registrationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|d:\\c_vscode_tim\\graduationproject1\\studentservice\\studentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7003D24F-BE4E-4E37-B555-CCC19B119EEE}|StudentService\\StudentService.csproj|solutionrelative:studentservice\\studentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAKQAAAAAAAAAAADwv8wAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-04T02:16:13.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RegistrationService\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "RegistrationService\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:26:34.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Models\\DangKy.cs",
+              "RelativeDocumentMoniker": "RegistrationService\\Models\\DangKy.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Models\\DangKy.cs",
+              "RelativeToolTip": "RegistrationService\\Models\\DangKy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:25:19.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DangKyController.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Controllers\\DangKyController.cs",
+              "RelativeDocumentMoniker": "RegistrationService\\Controllers\\DangKyController.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Controllers\\DangKyController.cs",
+              "RelativeToolTip": "RegistrationService\\Controllers\\DangKyController.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAADwv/gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:27:05.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\appsettings.json",
+              "RelativeDocumentMoniker": "RegistrationService\\appsettings.json",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\appsettings.json",
+              "RelativeToolTip": "RegistrationService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T16:27:38.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ThesisService\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ThesisService\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:23:36.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\Login.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-04T02:07:39.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "StudentService\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "StudentService\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:17:33.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Services\\AuthService.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Services\\AuthService.cs",
+              "RelativeToolTip": "GraduationClient\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T02:06:51.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-04T02:16:13.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Routes.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Routes.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-04T02:50:58.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SinhVienController.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Controllers\\SinhVienController.cs",
+              "RelativeDocumentMoniker": "StudentService\\Controllers\\SinhVienController.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Controllers\\SinhVienController.cs",
+              "RelativeToolTip": "StudentService\\Controllers\\SinhVienController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:18:13.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SinhVien.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Models\\SinhVien.cs",
+              "RelativeDocumentMoniker": "StudentService\\Models\\SinhVien.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Models\\SinhVien.cs",
+              "RelativeToolTip": "StudentService\\Models\\SinhVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:17:03.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentService\\appsettings.json",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\appsettings.json",
+              "RelativeToolTip": "StudentService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T16:18:43.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Program.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Program.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Program.cs",
+              "RelativeToolTip": "GraduationClient\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:42:47.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\_Imports.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\_Imports.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T17:04:53.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "GraduationClient\\wwwroot\\app.css",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\wwwroot\\app.css",
+              "RelativeToolTip": "GraduationClient\\wwwroot\\app.css",
+              "ViewState": "AgIAABUBAAAAAAAAAAAowD8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-04T02:45:54.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SinhVien.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\SinhVien.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\SinhVien.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\SinhVien.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\SinhVien.razor",
+              "ViewState": "AgIAACoBAAAAAAAAAADwv1IBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T16:41:25.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DeTai.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\DeTai.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\DeTai.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\DeTai.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\DeTai.razor",
+              "ViewState": "AgIAAAwBAAAAAAAAAADwvyQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T16:41:16.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\App.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\App.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\App.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-04T02:51:08.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DangKy.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\DangKy.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\DangKy.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\DangKy.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\DangKy.razor",
+              "ViewState": "AgIAAOQAAAAAAAAAAADwvwsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T16:41:37.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Grades.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Grades.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\Grades.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Grades.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\Grades.razor",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAJkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T16:41:48.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DeTaiController.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Controllers\\DeTaiController.cs",
+              "RelativeDocumentMoniker": "ThesisService\\Controllers\\DeTaiController.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Controllers\\DeTaiController.cs",
+              "RelativeToolTip": "ThesisService\\Controllers\\DeTaiController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAADwv50AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:23:58.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Program.cs",
+              "RelativeDocumentMoniker": "ThesisService\\Program.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Program.cs",
+              "RelativeToolTip": "ThesisService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:24:07.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\appsettings.json",
+              "RelativeDocumentMoniker": "ThesisService\\appsettings.json",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\appsettings.json",
+              "RelativeToolTip": "ThesisService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T16:24:16.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Program.cs",
+              "RelativeDocumentMoniker": "RegistrationService\\Program.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\Program.cs",
+              "RelativeToolTip": "RegistrationService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:27:25.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Models\\LoginResponse.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "GraduationClient\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T02:06:22.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DeTai.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\DeTai.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Models\\DeTai.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\DeTai.cs",
+              "RelativeToolTip": "GraduationClient\\Models\\DeTai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:40:10.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SinhVien.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\SinhVien.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Models\\SinhVien.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\SinhVien.cs",
+              "RelativeToolTip": "GraduationClient\\Models\\SinhVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:39:59.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Program.cs",
+              "RelativeDocumentMoniker": "StudentService\\Program.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\Program.cs",
+              "RelativeToolTip": "StudentService\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:18:32.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\DangKy.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Models\\DangKy.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Models\\DangKy.cs",
+              "RelativeToolTip": "GraduationClient\\Models\\DangKy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:40:20.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "GraduationClient\\Services\\ApiService.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Services\\ApiService.cs",
+              "RelativeToolTip": "GraduationClient\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:39:36.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\appsettings.json",
+              "RelativeDocumentMoniker": "GraduationClient\\appsettings.json",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\appsettings.json",
+              "RelativeToolTip": "GraduationClient\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T16:54:28.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ThesisService.csproj",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\ThesisService.csproj",
+              "RelativeDocumentMoniker": "ThesisService\\ThesisService.csproj",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\ThesisService.csproj",
+              "RelativeToolTip": "ThesisService\\ThesisService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-03T16:21:14.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DeTai.cs",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Models\\DeTai.cs",
+              "RelativeDocumentMoniker": "ThesisService\\Models\\DeTai.cs",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\ThesisService\\Models\\DeTai.cs",
+              "RelativeToolTip": "ThesisService\\Models\\DeTai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:23:05.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GraduationClient.csproj",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\GraduationClient.csproj",
+              "RelativeDocumentMoniker": "GraduationClient\\GraduationClient.csproj",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\GraduationClient.csproj",
+              "RelativeToolTip": "GraduationClient\\GraduationClient.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-03T16:38:51.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "GraduationClient\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\GraduationClient\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "GraduationClient\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-03T16:40:50.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RegistrationService.csproj",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\RegistrationService.csproj",
+              "RelativeDocumentMoniker": "RegistrationService\\RegistrationService.csproj",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\RegistrationService\\RegistrationService.csproj",
+              "RelativeToolTip": "RegistrationService\\RegistrationService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-03T16:20:02.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StudentService.csproj",
+              "DocumentMoniker": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\StudentService.csproj",
+              "RelativeDocumentMoniker": "StudentService\\StudentService.csproj",
+              "ToolTip": "D:\\C_vscode_tim\\GraduationProject1\\StudentService\\StudentService.csproj",
+              "RelativeToolTip": "StudentService\\StudentService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-03T16:15:21.726Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+﻿@implements IDisposable
+
+@inject AuthService Auth
+@inject NavigationManager Navigation
+
+
+<div class="sidebar">
+
+    <!-- LOGO -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            🎓
+        </div>
+
+        <div>
+            <div class="brand-title">
+                Graduation
+            </div>
+
+            <div class="brand-subtitle">
+                Management System
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+        <div class="menu-title">
+            MENU CHÍNH
+        </div>
+
+
+        <NavLink href="/"
+                 Match="NavLinkMatch.All"
+                 class="menu-item">
+
+            🏠
+            <span>Trang chủ</span>
+
+        </NavLink>
+
+
+        @if (Auth.IsLoggedIn && Auth.Quyen == "Admin")
+        {
+            <div class="menu-title">
+                QUẢN TRỊ
+            </div>
+
+            <NavLink href="/sinhvien"
+                     class="menu-item">
+
+                👨‍🎓
+                <span>Quản lý sinh viên</span>
+
+            </NavLink>
+
+
+            <NavLink href="/detai"
+                     class="menu-item">
+
+                📚
+                <span>Quản lý đề tài</span>
+
+            </NavLink>
+
+
+            <NavLink href="/dangky"
+                     class="menu-item">
+
+                📝
+                <span>Quản lý đăng ký</span>
+
+            </NavLink>
+
+
+            <NavLink href="/grades"
+                     class="menu-item">
+
+                📊
+                <span>Quản lý điểm</span>
+
+            </NavLink>
+        }
+
+
+        @if (Auth.IsLoggedIn && Auth.Quyen == "Student")
+        {
+            <div class="menu-title">
+                SINH VIÊN
+            </div>
+
+
+            <NavLink href="/detai"
+                     class="menu-item">
+
+                📚
+                <span>Danh sách đề tài</span>
+
+            </NavLink>
+
+
+            <NavLink href="/dangky"
+                     class="menu-item">
+
+                📝
+                <span>Đăng ký đề tài</span>
+
+            </NavLink>
+
+
+            <NavLink href="/grades"
+                     class="menu-item">
+
+                📊
+                <span>Điểm của tôi</span>
+
+            </NavLink>
+        }
+
+    </nav>
+
+
+    <!-- USER -->
+
+    <div class="sidebar-bottom">
+
+        @if (Auth.IsLoggedIn)
+        {
+            <div class="user-box">
+
+                <div class="user-avatar">
+                    👤
+                </div>
+
+                <div class="user-info">
+
+                    <div class="user-name">
+                        @Auth.HoTen
+                    </div>
+
+                    <div class="user-role">
+                        @Auth.Quyen
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="logout-button"
+                    @onclick="Logout">
+
+                🚪 Đăng xuất
+
+            </button>
+        }
+        else
+        {
+            <button class="login-button"
+                    @onclick="Login">
+
+                🔐 Đăng nhập
+
+            </button>
+        }
+
+    </div>
+
+</div>
+
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        Auth.OnChange += StateHasChanged;
+    }
+
+
+    private void Login()
+    {
+        Navigation.NavigateTo("/login");
+    }
+
+
+    private void Logout()
+    {
+        Auth.Logout();
+
+        Navigation.NavigateTo("/");
+    }
+
+
+    public void Dispose()
+    {
+        Auth.OnChange -= StateHasChanged;
+    }
+
+}
